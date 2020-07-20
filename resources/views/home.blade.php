@@ -14,17 +14,14 @@
                     <div class="example">
                         <div class="example-preview">
                             <?php
-                                for( $i=1; $i<=100; $i++ )
-                                {
-                                    if($i % 5){
-                                        $n = 'X';
-                                    }else if($i % 6){
-                                        $n = 'Y';
-                                    }else{
-                                        $n = $i;
+                                for ($i = 1; $i < 100; $i++) {
+                                    if ( $bagi = $i % 5 == 0 ) {
+                                       echo ' X ';
+                                    } else if ( $bagi = $i % 6 == 0 ) {
+                                        echo ' Y ';
+                                    } else {
+                                        echo " " . $i . " "; 
                                     }
-                                    echo $n;
-                                    echo "&nbsp;&nbsp;";
                                 }
                             ?>
                         </div>
